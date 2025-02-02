@@ -79,5 +79,9 @@ Contributions are welcome! Feel free to fork the repository and submit a pull re
 
 ---
 
+** singhabhimanyu9838@gmail.com **
+
 **Developed by Abhimanyu Singh 🚀**
+
+
 
