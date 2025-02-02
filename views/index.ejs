@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <h1 class="head">Here is Detail List of All Member </h1>
+    <div class="search">
+        <form method="post" action="/Home/search">
+            <input name="id" type="text" placeholder="Search Your Id" required>
+            <button type="submit" style="height: 40px; width: 25vw;margin-left: 23px;"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+
+    <a href="/Home/new_member"> <button class="mainButton"> <i class="fa-solid fa-plus"></i> Add new Members
+        </button></a>
+    <div class="list">
+
+        <% for(post of posts){ %>
+            <div class="member">
+                <p>
+                    <%=post.id%>.
+                </p>
+                <div class="image"><img src="<%=post.image %>" alt=""></div>
+                <div class="personal">
+                    <p>Name : <b>
+                            <%=post.first_name%>
+                                <%=post.last_name%>
+                        </b>
+                    </p>
+                    <p>Email : <b>
+                            <%=post.email%>
+                        </b>
+                    </p>
+                    <p>Gender :<b>
+                            <%=post.gender%>
+                        </b>
+                    </p>
+                </div>
+                <div class="option">
+                    <div class="edit"><a href="/Home/<%=post.id%>/edit"><button>Edit</button></a></div>
+                    <div class="delete">
+                        <form method="post" action="/Home/<%=post.id%>?_method=DELETE"> <button>Delete</button></form>
+                    </div>
+                    <div class="view"><a href="Home/view/<%=post.id%>"><button>View</button></a></div>
+
+                </div>
+            </div>
+            <% }%>
+    </div>
+
+
+</body>
+
+</html>

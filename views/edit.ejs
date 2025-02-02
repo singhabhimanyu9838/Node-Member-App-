@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/view.css">
+</head>
+<body>
+    <h1 class="head" style="margin-bottom: 10vh;">Edit The Member Detail</h1>
+    <textarea class="head" rows="1" name="first_name" id="headText"> Re-Select Your Gender</textarea>
+    <div class="member">
+        <form method="post" action="/Home/<%=post.id%>?_method=PATCH">
+            <div class="fixId">Id no. : <%=post.id%></div>
+            <div style="margin-bottom: 20px;" class="name">
+                <label for="first_name">First Name:</label>
+                <textarea rows="1"col="5" name="first_name" id=""><%=post.first_name%></textarea>
+            
+
+                <label for="last_name">Last Name:</label>
+                <textarea rows="1"col="5"  name="last_name" id=""><%=post.last_name%></textarea><br><br>
+            </div>
+
+            <div style="margin-bottom: 20px;" class="email">
+                <label for="email">Email:</label>
+                <textarea rows="1"col="10"  name="email" id="textEmail"><%=post.email%></textarea><br><br>
+            </div>
+
+            <div style="margin-bottom: 20px;" class="gender">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+            </div>
+            <div style="margin-bottom: 20px;" class="id">
+                <label for="image">Image-Address:</label>
+               <textarea  name="image" id="textId"><%=post.image%></textarea><br><br>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div> 
+</body>
+</html>

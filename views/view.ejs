@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View the Member</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1 class="head" style="margin-top: 10vh;">Viewing the particular Member</h1>
+    <div class="member" style="margin: 4vw;">
+        <p style="margin-left:4vw ;">
+            <%=post.id%>.
+        </p>
+        <div class="image"><img src="<%=post.image %>" alt=""></div>
+        <div class="personal">
+            <p>Name : <b>
+                    <%=post.first_name%>
+                        <%=post.last_name%>
+                </b>
+            </p>
+            <p>Email : <b>
+                    <%=post.email%>
+                </b>
+            </p>
+            <p>Gender :<b>
+                    <%=post.gender%>
+                </b>
+            </p>
+        </div>
+        <div class="option">
+            <div class="edit"><a href="/Home/<%=post.id%>/edit"><button>Edit</button></a></div>
+            <div class="delete">
+                <form method="post" action="/Home/<%=post.id%>?_method=DELETE"> <button>Delete</button></form>
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>

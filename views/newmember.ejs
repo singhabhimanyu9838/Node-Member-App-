@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding new member</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/view.css">
+</head>
+<body>
+    <h1 class="head" style="margin-bottom: 10vh;">Adding new member in the Company</h1>
+    <h2 class="head" style="box-shadow: none;">* Give the unique Id which is not entry yet and greater than 100</h2>
+    <div class="member">
+        <form method="post" action="/Home">
+            <div style="margin-bottom: 20px;" class="name">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="firstName" name="first_name" required>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="lastName" name="last_name" required><br><br>
+            </div>
+
+            <div style="margin-bottom: 20px;" class="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+
+            <div style="margin-bottom: 20px;" class="gender">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+            </div>
+            <div style="margin-bottom: 20px;" class="addimage">
+                <label for="image">Image-Address</label>
+                <input style="color: aliceblue;" type="text" id="id" name="image" required><br><br>
+            </div>
+            <div style="margin-bottom: 20px; background-color: transparent;" class="id">
+                <label for="id">ID:</label>
+                <textarea rows="1" name="id" id="" style="background-color:transparent;color: aliceblue; height: 20px;"></textarea>
+                <!-- <input style="color: aliceblue;" type="text" id="id" name="id" placeholder=""><br><br> -->
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
