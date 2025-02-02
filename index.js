@@ -14,6 +14,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.redirect("/Home");
+});
+
 app.get("/Home", (req, res) => {
     // res.send("Page is rendering");
     res.render("index.ejs", { posts });
