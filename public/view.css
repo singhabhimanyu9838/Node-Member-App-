@@ -138,9 +138,7 @@ input {
     padding: 2vw;
     background-color: transparent;
 }
-.gender label{
-    margin: 0 2vw;
-}
+
 
 button {
     max-width: 80vw;
@@ -270,7 +268,7 @@ button {
 
     }
     .gender label{
-        margin-left: 3vw;
+        margin-left: 4vw;
     }
 
     input {
