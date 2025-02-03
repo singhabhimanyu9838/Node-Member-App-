@@ -68,10 +68,11 @@ button:hover {
 textarea {
     border-radius: 5px;
     line-height: 15px;
-    padding: 5px 10px;
+    padding: 5px 7px;
     font-size: 15px;
     width: 100%;
-    min-height: 80px;
+    min-height: 35px;
+    color:#D4A017 ;
 }
 
 #textId {
@@ -91,7 +92,7 @@ textarea {
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 15vw;
+    max-width: 30vw;
 }
 
 .id {
@@ -102,7 +103,7 @@ textarea {
 }
 
 .fixId {
-    border: 1px solid rgba(246, 238, 5, 0.764);
+    border: 2px solid rgba(246, 238, 5, 0.764);
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -110,9 +111,9 @@ textarea {
     color: #F4C430;
     font-weight: 900;
     width: 90%;
-    max-width: 400px;
+    max-width: 83vw;
     margin: 20px auto;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
 }
 
@@ -208,6 +209,7 @@ button {
     input {
         font-size: 16px;
         height: 35px;
+        margin-left: 3vw;
     }
 
     button {
@@ -263,14 +265,19 @@ button {
 @media (max-width: 480px) {
     .member {
         width: 80vw;
-        font-size: 20px;
+        font-size: 19px;
         padding: 5vw;
 
+    }
+    .gender label{
+        margin-left: 3vw;
     }
 
     input {
         font-size: 16px;
         height: 35px;
+        width: 80vw;
+        /* margin-left: 3vw; */
     }
 
     button {
@@ -284,12 +291,14 @@ button {
     }
     .name{
         margin-right: 4vw;
+       
     }
     .email{
         margin-right: 4vw;
     }
     #textEmail{
-        max-width: 86vw;
+        max-width: 84vw;
+        margin-left: 4vw;
     }
     .email textarea{
         width: 40vw;
@@ -313,9 +322,12 @@ button {
     }
     .name textarea{
         background-color: transparent;
+        margin-left: 4vw;
     }
-    .member textarea{
+     textarea{
         background-color: transparent;
+        width: 84vw;
+    
     }
     .gender{
         display: flex;

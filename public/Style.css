@@ -21,6 +21,8 @@ i {
     text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 12px rgba(246, 238, 5, 0.764);
+    /* width: 97vw;
+    margin-left: 1.5vw; */
 }
 
 .search {
@@ -40,7 +42,7 @@ i {
     font-size: 18px;
 }
 .search form button{
-    height: 40px; 
+    height: 33px; 
     width: 24vw;
     margin-left: 23px;
 }
@@ -191,6 +193,7 @@ button:hover {
 @media (max-width: 480px) {
     .search input {
         width: 75vw;
+        height: 9vw;
     }
     .list{
         margin: 5vw 0;
