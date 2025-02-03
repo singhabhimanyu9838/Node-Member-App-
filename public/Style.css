@@ -122,17 +122,17 @@ button:hover {
     margin-left: 5vw ;
     text-align: center;
     border: 2px solid black;
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
     overflow: hidden;
     border-radius: 50%;
     border: 3px solid #F4C430;
 }
 .image img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 20vw;
+    height: 20vw;
+    object-fit: fill;
     
 }
 .personal{
@@ -164,4 +164,29 @@ button:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #888; 
+}
+@media (max-width:476px){
+    .head{
+        width: 100vw;
+        margin-left: 5vw;
+    }
+    .search  button{
+        width: 13vw;
+    }
+    button{
+        width: 15vw;
+    }
+    .list{
+        text-align: center;
+
+    }
+    body{
+        
+            width: 476px;
+    
+        text-align: center;
+    }
+    .list{
+        /* margin-left: 20vw; */
+    }
 }
